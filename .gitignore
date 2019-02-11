@@ -1,0 +1,8 @@
+#Folders
+/.vscode/
+/app/node_modules/
+
+#Single files
+.DS_Store
+/app/README.md
+/app/.DS_Store
