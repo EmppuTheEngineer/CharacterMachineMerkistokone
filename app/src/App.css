@@ -52,14 +52,17 @@ ul {
   border-radius: 10px;
 }
 
-.charData {
+#datawrapper{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
 }
-#leftData {
-  float: left;
-  margin-left: 2em;
+
+.charInfoLabel {
 }
-#rightData {
-  float: right;
-  margin-right: 2em;
-  padding-right: 2em;
+
+.charInfoData {
 }

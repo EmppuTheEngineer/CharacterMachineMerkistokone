@@ -10,23 +10,15 @@ const InfoBox = () => {
     <div className="InfoBox">
       <h3>Merkin tiedot</h3>
       <span className="character">{selectedCharacter.char}</span>
-      <div id="dataContainer">
+      <div id="datawrapper">
         {/* TO DO:      turn into table 
             CHECK OUT:  flex-box, grid*/}
-        <div id="leftData">
-          <ul>
-            <li>Suomeksi</li>
-            <li>Englanniksi</li>
-            <li>Unicode</li>
-          </ul>
-        </div>
-        <div id="rightData">
-          <ul>
-            <li className="charData">{selectedCharacter.nameFin}</li>
-            <li className="charData">{selectedCharacter.nameEng}</li>
-            <li className="charData">{selectedCharacter.unicode}</li>
-          </ul>
-        </div>
+        <div className="charInfoLabel">Suomeksi</div>
+        <div className="charInfoData">{selectedCharacter.nameFin}</div>
+        <div className="charInfoLabel">Englanniksi</div>
+        <div className="charInfoData">{selectedCharacter.nameEng}</div>
+        <div className="charInfoLabel">Unicode</div>
+        <div className="charInfoData">{selectedCharacter.unicode}</div>
       </div>
     </div>
   )
@@ -45,7 +37,7 @@ const UserInput = () => {
     <div className="userInputForm">
       <p>Anna merkki, jonka nimen haluat tietää:</p>
       <input type="search" placeholder="Merkki"></input>
-      <button type="button" onClick="">Etsi</button>
+      <button type="button" onClick="" id="findButton">Etsi</button>
     </div>
   );
 };
